@@ -28,7 +28,7 @@ cy.get('.vc_custom_heading')
   //Clicking on Products supported 
   cy.get('.vc_tta-title-text').contains('Products Supported').should('be.visible').click();
   
-  //Asserting the list of supported products
+  //Asserting list of supported products
   const supportedProducts = ['Cue Sheet / AV Work', 'Recording', 'Bundle', 'Advertisement'];
   cy.contains('h3', 'There are several types of Product Supported:')
   .closest('.wpb_wrapper')
